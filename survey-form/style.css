@@ -68,3 +68,21 @@ input[type="checkbox"],
 input[type="radio"] {
   margin-right: 8px;
 }
+
+.back-home {
+  margin: 2rem 0;
+}
+
+.back-home a {
+  text-decoration: none;
+  color: white;
+  background-color: #0066cc;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.back-home a:hover {
+  background-color: #004c99;
+}
