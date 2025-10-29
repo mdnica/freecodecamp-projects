@@ -50,6 +50,13 @@
         font-size: 0.9rem;
         color: #555;
       }
+
+      #last-updated {
+        font-size: 0.9rem;
+        color: #555;
+        text-align: center;
+        margin-top: 20px;
+      }
     </style>
   </head>
   <body>
@@ -72,6 +79,20 @@
 
     <footer>
       <p>Built with ❤️ by mdnica</p>
+      <p id="last-updated"></p>
     </footer>
+    <script>
+      const lastUpdated = new Date(document.lastModified);
+      document.getElementById("last-updated").textContent =
+        "Last updated on " +
+        lastUpdated.toLocaleDateString("en-GB", {
+          weekday: "short",
+          year: "numeric",
+          month: "short",
+          day: "numeric",
+          hour: "2-digit",
+          minute: "2-digit",
+        });
+    </script>
   </body>
 </html>
