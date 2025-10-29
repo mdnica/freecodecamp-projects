@@ -3,15 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Technical Documentation Page</title>
+    <title>Technical Documentation | FreeCodeCamp Project</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Technical Documentation Page</h1>
-    <p>This is a test file for GitHub.</p>
+    <nav id="navbar">
+      <header>JavaScript Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#variables">Variables</a></li>
+        <li><a class="nav-link" href="#functions">Functions</a></li>
+        <li><a class="nav-link" href="#loops">Loops</a></li>
+        <li><a class="nav-link" href="#arrays">Arrays</a></li>
+      </ul>
+    </nav>
 
-    <div class="back-home">
-      <a href="../index.html">← Back to Home</a>
-    </div>
+    <main id="main-doc">
+      <section id="introduction" class="main-section">
+        <header>Introduction</header>
+        <p>
+          JavaScript is a lightweight, interpreted programming language used to
+          make web pages interactive. It runs in the browser and is essential
+          for web development.
+        </p>
+      </section>
+
+      <section id="variables" class="main-section">
+        <header>Variables</header>
+        <p>
+          Variables store data values that can be reused throughout your code.
+          Use <code>let</code>, <code>const</code>, or <code>var</code> to
+          declare them.
+        </p>
+        <pre><code>let name = "Diana";
+const pi = 3.14;
+var age = 25;</code></pre>
+      </section>
+
+      <section id="functions" class="main-section">
+        <header>Functions</header>
+        <p>
+          Functions are blocks of code designed to perform a specific task. They
+          can take inputs and return outputs.
+        </p>
+        <pre><code>function greet(name) {
+  return `Hello, ${name}!`;
+}</code></pre>
+      </section>
+
+      <section id="loops" class="main-section">
+        <header>Loops</header>
+        <p>
+          Loops are used to repeat code multiple times. The most common types
+          are <code>for</code> and <code>while</code>.
+        </p>
+        <pre><code>for (let i = 0; i < 5; i++) {
+  console.log(i);
+}</code></pre>
+      </section>
+
+      <section id="arrays" class="main-section">
+        <header>Arrays</header>
+        <p>Arrays store multiple values in a single variable.</p>
+        <pre><code>const fruits = ["apple", "banana", "cherry"];
+console.log(fruits[1]); // banana</code></pre>
+      </section>
+
+      <div class="back-home">
+        <a href="../index.html">← Back to Home</a>
+      </div>
+    </main>
+
+    <footer>
+      <p>Built with ❤️ by mdnica</p>
+    </footer>
   </body>
 </html>
